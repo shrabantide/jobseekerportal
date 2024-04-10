@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EmployeeMaster.master.cs" Inherits="JobSeekerPortal.EmployeeMaster" %>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+      <title>KeepSeekers</title>
+      <link rel="KS icon" href="Images/KSlogo.png" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="CSS/dashboardStyle.css" />
+</head>
+<body>
+
+        <div class="wrapper">
+    <div class="sidebar">
+        <h2><i class="fas fa-bars" style="margin-left: -40px"></i>&nbsp Keep Seekers </h2>
+       
+        <ul>
+        
+             <li><a href="ResumeBuilding.aspx" ><i class="fas fa-bus"></i>&nbsp Resume Building</a></li>
+            <li><a href="ViewVacancy.aspx" ><i class="fas fa-road"></i>&nbsp View Jobs</a></li>
+            <li><a href="ViewCompanyDetails.aspx"><i class="fas fa-clock"></i>&nbsp View Company Details</a></li>
+            <li><a href="ManageProfile.aspx"><i class="fas fa-chair"></i>&nbsp Manage Profile </a></li>
+            <li><a href="ChangePassword.aspx"><i class="fas fa-key"></i>&nbsp Change Password</a></li>
+            <li><a href="ApplyFeedback.aspx"><i class="fas fa-pen"></i>&nbsp Apply Feedback</a></li>
+            <li><a href="ViewFeedback.aspx"><i class="fas fa-pen"></i>&nbsp View Feeback</a></li>
+            <li><a href="AppliedJob.aspx"><i class="fas fa-save"></i>&nbsp Applied Jobs</a></li>
+            <li><a href="LogOut.aspx"><i class="fas fa-save"></i>&nbsp Log Out</a></li>
+        </ul> 
+       
+    </div>
+    <div class="main_content">
+        <div class="header">
+                
+               
+        </div>  
+        <div class="info">
+          <div id="divOfAddBusOwnwer" style="display:none">
+             
+
+          </div>
+         </div>
+    </div>
+</div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <asp:Label id="lbl1" runat="server" style="position:absolute; top:300px; left:400px"></asp:Label>
+</body>
+</html>

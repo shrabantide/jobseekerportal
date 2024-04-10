@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VisitorMaster.master.cs" Inherits="JobSeekerPortal.VisitorMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>KeepSeekers</title>
+      <link rel="Gbus icon" href="Images/KSlogo.png" runat="server">
+     <link rel="stylesheet" href="CSS/visitor.css" type="text/css" />
+     <style>
+         .pill-nav a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 5px;
+        }
+
+        .pill-nav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        .pill-nav a.active {
+        background-color: dodgerblue;
+        color: white;
+             width: 47px;
+             margin-left: 168px;
+         }
+
+     </style>
+</head>
+<body style="margin:0px; padding:0px">
+    <form id="form1" runat="server">
+        <div class="pill-nav">
+        </br>
+            <asp:Image runat="server" Height="40px" Width="40px" ImageUrl="~/Images/KSlogo.png" style="position:absolute; left:10px;"/>
+             <a runat="server" href="" style="color: blue; pointer-events:none; font-family: Mistral; font-size: 33px; position:absolute; left:170px; margin-left:-120px; top: 6px; width: 141px;">Keep Seekers</a>
+         
+            <div style="display:inline">
+            <a href="#home" style="float:left; height: 20px; margin-left:220px; width: 78px;">Home</a>
+            <a href="#about" style="float:left">About Us</a>
+            <a href="UserRegistration.aspx" style="float:right">Sign Up</a>
+            <a href="UserLogin.aspx" style="float:right">Sign In</a>
+            </div>
+        </div>
+       
+        <br /><br /><br />
+
+        <hr style="width:100%" />
+        <div>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+<footer>
+    <div style="width:100%; height:50px; background-color:royalblue; color: white; text-align: center">
+        <p  runat="server" style="color: white; pointer-events:none; font-family: Mistral; font-size: 20px;">Keep Seekers </p> <p style="margin-top:-20px"> © 2023- 2024 Keep Seekers. All Rights Reserved.</p>
+
+    </div>
+</footer>
+</html>
